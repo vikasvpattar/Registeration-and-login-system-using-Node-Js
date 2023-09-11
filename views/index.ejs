@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("../partials/meta") %>
+    <title>Document</title>
+  </head>
+  <body>
+    <%- include("../partials/navbar") %>
+    <form
+      action="/register"
+      method="post"
+      class="flex flex-col justify-center items-center bg-gray-100"
+    >
+      <input
+        type="text"
+        name="name"
+        class="bg-black text-white mt-3 font-extrabold"
+        required
+        autocomplete="off"
+        placeholder="enter name"
+      />
+      <input
+        type="text"
+        name="email"
+        class="bg-black text-white mt-3 font-extrabold"
+        required
+        autocomplete="off"
+        placeholder="enter email"
+      />
+      <input
+        type="text"
+        name="phone"
+        class="bg-black text-white mt-3 font-extrabold"
+        required
+        autocomplete="off"
+        placeholder="enter phone"
+      />
+      <input
+        type="text"
+        name="password"
+        class="bg-black text-white mt-3 font-extrabold"
+        required
+        autocomplete="off"
+        placeholder="enter password"
+      />
+      <input
+        type="text"
+        name="confpassword"
+        class="bg-black text-white mt-3 font-extrabold"
+        required
+        autocomplete="off"
+        placeholder="enter confirm password"
+      />
+      <button type="submit" class="bg-black text-white mt-3 font-extrabold">
+        submit
+      </button>
+    </form>
+  </body>
+</html>
